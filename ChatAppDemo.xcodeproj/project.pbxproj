@@ -11,11 +11,12 @@
 		DA2454DA28462E24004E0A68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2454D928462E24004E0A68 /* ContentView.swift */; };
 		DA2454DC28462E2A004E0A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2454DB28462E2A004E0A68 /* Assets.xcassets */; };
 		DA2454DF28462E2A004E0A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2454DE28462E2A004E0A68 /* Preview Assets.xcassets */; };
-		DA2454E728466977004E0A68 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2454E628466977004E0A68 /* SwiftUIView.swift */; };
+		DA2454E728466977004E0A68 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2454E628466977004E0A68 /* Header.swift */; };
+		DA25418D2901745500D6FBFD /* messageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25418C2901745500D6FBFD /* messageManager.swift */; };
+		DA25418F2901E8A100D6FBFD /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA25418E2901E8A100D6FBFD /* GoogleService-Info-2.plist */; };
 		DA9C6C2F2850F63B00D249E4 /* Messege.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C6C2E2850F63B00D249E4 /* Messege.swift */; };
 		DA9C6C312851460100D249E4 /* Messeges bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C6C302851460100D249E4 /* Messeges bubble.swift */; };
 		DA9C6C3328563CAF00D249E4 /* Text_messege_field .swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C6C3228563CAF00D249E4 /* Text_messege_field .swift */; };
-		DA9C6C352856466D00D249E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9C6C342856466D00D249E4 /* GoogleService-Info.plist */; };
 		DA9C6C3828567D4200D249E4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA9C6C3728567D4200D249E4 /* FirebaseFirestore */; };
 		DA9C6C3A28567D4200D249E4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA9C6C3928567D4200D249E4 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
@@ -26,11 +27,12 @@
 		DA2454D928462E24004E0A68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA2454DB28462E2A004E0A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2454DE28462E2A004E0A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA2454E628466977004E0A68 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = ../../../../SwiftUIView.swift; sourceTree = "<group>"; };
+		DA2454E628466977004E0A68 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Header.swift; path = ../../../../Header.swift; sourceTree = "<group>"; };
+		DA25418C2901745500D6FBFD /* messageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = messageManager.swift; path = ../../../messageManager.swift; sourceTree = "<group>"; };
+		DA25418E2901E8A100D6FBFD /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		DA9C6C2E2850F63B00D249E4 /* Messege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Messege.swift; path = ../../../../Messege.swift; sourceTree = "<group>"; };
 		DA9C6C302851460100D249E4 /* Messeges bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Messeges bubble.swift"; path = "../../../../Messeges bubble.swift"; sourceTree = "<group>"; };
 		DA9C6C3228563CAF00D249E4 /* Text_messege_field .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Text_messege_field .swift"; path = "../../../../Text_messege_field .swift"; sourceTree = "<group>"; };
-		DA9C6C342856466D00D249E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				DA2454D728462E24004E0A68 /* ChatAppDemoApp.swift */,
+				DA25418C2901745500D6FBFD /* messageManager.swift */,
 				DA2454D928462E24004E0A68 /* ContentView.swift */,
-				DA9C6C342856466D00D249E4 /* GoogleService-Info.plist */,
+				DA25418E2901E8A100D6FBFD /* GoogleService-Info-2.plist */,
 				DA9C6C2D2850F60E00D249E4 /* Models */,
 				DA2454E5284668BC004E0A68 /* Componients */,
 				DA2454DD28462E2A004E0A68 /* Preview Content */,
@@ -87,7 +90,7 @@
 		DA2454E5284668BC004E0A68 /* Componients */ = {
 			isa = PBXGroup;
 			children = (
-				DA2454E628466977004E0A68 /* SwiftUIView.swift */,
+				DA2454E628466977004E0A68 /* Header.swift */,
 				DA9C6C302851460100D249E4 /* Messeges bubble.swift */,
 				DA9C6C3228563CAF00D249E4 /* Text_messege_field .swift */,
 			);
@@ -169,7 +172,7 @@
 			files = (
 				DA2454DF28462E2A004E0A68 /* Preview Assets.xcassets in Resources */,
 				DA2454DC28462E2A004E0A68 /* Assets.xcassets in Resources */,
-				DA9C6C352856466D00D249E4 /* GoogleService-Info.plist in Resources */,
+				DA25418F2901E8A100D6FBFD /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +186,9 @@
 				DA2454DA28462E24004E0A68 /* ContentView.swift in Sources */,
 				DA9C6C2F2850F63B00D249E4 /* Messege.swift in Sources */,
 				DA2454D828462E24004E0A68 /* ChatAppDemoApp.swift in Sources */,
-				DA2454E728466977004E0A68 /* SwiftUIView.swift in Sources */,
+				DA2454E728466977004E0A68 /* Header.swift in Sources */,
 				DA9C6C3328563CAF00D249E4 /* Text_messege_field .swift in Sources */,
+				DA25418D2901745500D6FBFD /* messageManager.swift in Sources */,
 				DA9C6C312851460100D249E4 /* Messeges bubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

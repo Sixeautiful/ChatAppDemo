@@ -8,23 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
-    var messagear = ["hi","how are u?", "good"]
+    @StateObject var messagemanager = messageManager()
+    
     var body: some View {
         VStack {
             VStack{
-                SwiftUIView()
+                Header()
+                ScrollViewReader{ proxy in
+                    
                 ScrollView{
-                    ForEach(messagear, id: \.self){ text in
-                        Messeges_bubble(message: Message(id: "12345", text: text, recived: true, timestamp: Date()))
+                    ForEach(messagemanager.message, id: \.id){ text in
+                        Messeges_bubble(message: text)
                     }
                 } // scroll wiew
+                    
                 .padding(.top, 10)
                 .background(.white)
                 //can add custom corner radios
-                
+//                .onChange(of: messagemanager.lastMessageId) { id in
+//            // When the lastMessageId changes, scroll to the bottom of the conversation
+//            withAnimation {
+//                proxy.scrollTo(id, anchor: .bottom)
+//            }
+//
+//                } // onChange
+                }
             } //Vstack 1
             .background(Color("Peach"))
-            Text_messege_field_()
+            MessageField()
         }// Vstack2
     }
 }
@@ -34,3 +45,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
